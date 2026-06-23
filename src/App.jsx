@@ -49,7 +49,7 @@
 import { useEffect, useState } from "react"
 import Todoform from "./Components/Todoform";
 import Todolist from "./Components/Todolist";
-import toast from "react-hot-toast";
+import toast, { Toaster } from "react-hot-toast";
 
 
 
@@ -88,6 +88,7 @@ const App = () => {
   return (
 
     <div className="flex flex-col items-center mt-6">
+      <Toaster position="top-center" />
       <h1 className="text-4xl font-semibold">Todo App</h1>
 
       <Todoform addTodo={addTodo} />
