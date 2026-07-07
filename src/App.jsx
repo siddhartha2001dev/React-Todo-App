@@ -209,12 +209,6 @@ const App = () => {
 
 
 
-
-
-
-
-
-
   //useEffect
   useEffect(() => {
     localStorage.setItem('todos', JSON.stringify(todo));
